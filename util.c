@@ -221,25 +221,138 @@ const char *biome2str(int mc, int id)
     case bamboo_jungle: return "bamboo_jungle";
     case bamboo_jungle_hills: return "bamboo_jungle_hills";
     // 1.16
-    case soul_sand_valley: return "soul_sand_valley";
-    case crimson_forest: return "crimson_forest";
-    case warped_forest: return "warped_forest";
-    case basalt_deltas: return "basalt_deltas";
+const char *biome2str(int mc, int id)
+{
+    if (mc >= MC_1_18)
+    {
+        // a bunch of 'new' biomes in 1.18 actually just got renamed
+        // (based on their features and biome id conversion when upgrading)
+        switch (id)
+        {
+        case old_growth_birch_forest: return "原始桦木森林";
+        case old_growth_pine_taiga: return "原始松木针叶林";
+        case old_growth_spruce_taiga: return "原始云杉针叶林";
+        case snowy_plains: return "积雪的平原";
+        case sparse_jungle: return "稀疏的丛林";
+        case stony_shore: return "石岸";
+        case windswept_hills: return "风袭丘陵";
+        case windswept_forest: return "风袭森林";
+        case windswept_gravelly_hills: return "风袭沙砾丘陵";
+        case windswept_savanna: return "风袭热带草原";
+        case wooded_badlands: return "繁茂的恶地";
+        }
+    }
+
+    switch (id)
+    {
+    case ocean: return "海洋";
+    case plains: return "平原";
+    case desert: return "沙漠";
+    case mountains: return "山地";
+    case forest: return "森林";
+    case taiga: return "针叶林";
+    case swamp: return "沼泽";
+    case river: return "河流";
+    case nether_wastes: return "下界荒地";
+    case the_end: return "末路之地";
+    // 10
+    case frozen_ocean: return "冻洋";
+    case frozen_river: return "冻河";
+    case snowy_tundra: return "积雪的冻原";
+    case snowy_mountains: return "雪山";
+    case mushroom_fields: return "蘑菇岛";
+    case mushroom_field_shore: return "蘑菇岛岸";
+    case beach: return "沙滩";
+    case desert_hills: return "沙漠丘陵";
+    case wooded_hills: return "繁茂的丘陵";
+    case taiga_hills: return "针叶林丘陵";
+    // 20
+    case mountain_edge: return "山地边缘";
+    case jungle: return "丛林";
+    case jungle_hills: return "丛林丘陵";
+    case jungle_edge: return "丛林边缘";
+    case deep_ocean: return "深海";
+    case stone_shore: return "石岸";
+    case snowy_beach: return "积雪的沙滩";
+    case birch_forest: return "桦木森林";
+    case birch_forest_hills: return "桦木森林丘陵";
+    case dark_forest: return "黑森林";
+    // 30
+    case snowy_taiga: return "积雪的针叶林";
+    case snowy_taiga_hills: return "积雪的针叶林丘陵";
+    case giant_tree_taiga: return "巨型针叶林";
+    case giant_tree_taiga_hills: return "巨型针叶林丘陵";
+    case wooded_mountains: return "繁茂的山地";
+    case savanna: return "热带草原";
+    case savanna_plateau: return "热带高原";
+    case badlands: return "恶地";
+    case wooded_badlands_plateau: return "繁茂的恶地高原";
+    case badlands_plateau: return "恶地高原";
+    // 40  --  1.13
+    case small_end_islands: return "末地小型岛屿";
+    case end_midlands: return "末地中型岛屿";
+    case end_highlands: return "末地高岛";
+    case end_barrens: return "末地荒岛";
+    case warm_ocean: return "暖水海洋";
+    case lukewarm_ocean: return "温水海洋";
+    case cold_ocean: return "冷水海洋";
+    case deep_warm_ocean: return "暖水深海";
+    case deep_lukewarm_ocean: return "温水深海";
+    case deep_cold_ocean: return "冷水深海";
+    // 50
+    case deep_frozen_ocean: return "冰冻深海";
+    // Alpha 1.2 - Beta 1.7
+    case seasonal_forest: return "季节性森林";
+    case shrubland: return "灌木丛地";
+    case rainforest: return "雨林";
+
+    case the_void: return "虚空";
+
+    // mutated variants
+    case sunflower_plains: return "向日葵平原";
+    case desert_lakes: return "沙漠湖泊";
+    case gravelly_mountains: return "沙砾山地";
+    case flower_forest: return "繁花森林";
+    case taiga_mountains: return "针叶林山地";
+    case swamp_hills: return "沼泽丘陵";
+    case ice_spikes: return "冰刺平原";
+    case modified_jungle: return "丛林变种";
+    case modified_jungle_edge: return "丛林边缘变种";
+    case tall_birch_forest: return "高大桦木森林";
+    case tall_birch_hills: return "高大桦木丘陵";
+    case dark_forest_hills: return "黑森林丘陵";
+    case snowy_taiga_mountains: return "积雪的针叶林山地";
+    case giant_spruce_taiga: return "巨型云杉针叶林";
+    case giant_spruce_taiga_hills: return "巨型云杉针叶林丘陵";
+    case modified_gravelly_mountains: return "沙砾山地+";
+    case shattered_savanna: return "破碎的热带草原";
+    case shattered_savanna_plateau: return "破碎的热带高原";
+    case eroded_badlands: return "被风蚀的恶地";
+    case modified_wooded_badlands_plateau: return "繁茂的恶地高原变种";
+    case modified_badlands_plateau: return "恶地高原变种";
+    // 1.14
+    case bamboo_jungle: return "竹林";
+    case bamboo_jungle_hills: return "竹林丘陵";
+    // 1.16
+    case soul_sand_valley: return "灵魂沙峡谷";
+    case crimson_forest: return "绯红森林";
+    case warped_forest: return "诡异森林";
+    case basalt_deltas: return "玄武岩三角洲";
     // 1.17
-    case dripstone_caves: return "dripstone_caves";
-    case lush_caves: return "lush_caves";
+    case dripstone_caves: return "溶洞";
+    case lush_caves: return "繁茂洞穴";
     // 1.18
-    case meadow: return "meadow";
-    case grove: return "grove";
-    case snowy_slopes: return "snowy_slopes";
-    case stony_peaks: return "stony_peaks";
-    case jagged_peaks: return "jagged_peaks";
-    case frozen_peaks: return "frozen_peaks";
+    case meadow: return "草甸";
+    case grove: return "雪林";
+    case snowy_slopes: return "积雪的山坡";
+    case stony_peaks: return "冰封山峰";
+    case jagged_peaks: return "尖峭山峰";
+    case frozen_peaks: return "裸岩山峰";
     // 1.19
-    case deep_dark: return "deep_dark";
-    case mangrove_swamp: return "mangrove_swamp";
+    case deep_dark: return "深暗之域";
+    case mangrove_swamp: return "红树林沼泽";
     // 1.20
-    case cherry_grove: return "cherry_grove";
+    case cherry_grove: return "樱花树林";
     }
     return NULL;
 }
