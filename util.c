@@ -116,17 +116,17 @@ const char *biome2str(int mc, int id)
         // (based on their features and biome id conversion when upgrading)
         switch (id)
         {
-        case old_growth_birch_forest: return "old_growth_birch_forest";
-        case old_growth_pine_taiga: return "old_growth_pine_taiga";
-        case old_growth_spruce_taiga: return "old_growth_spruce_taiga";
-        case snowy_plains: return "snowy_plains";
-        case sparse_jungle: return "sparse_jungle";
-        case stony_shore: return "stony_shore";
-        case windswept_hills: return "windswept_hills";
-        case windswept_forest: return "windswept_forest";
-        case windswept_gravelly_hills: return "windswept_gravelly_hills";
-        case windswept_savanna: return "windswept_savanna";
-        case wooded_badlands: return "wooded_badlands";
+        case old_growth_birch_forest: return "old growth birch forest";
+        case old_growth_pine_taiga: return "old growth pine taiga";
+        case old_growth_spruce_taiga: return "old growth spruce taiga";
+        case snowy_plains: return "snowy plains";
+        case sparse_jungle: return "sparse jungle";
+        case stony_shore: return "stony shore";
+        case windswept_hills: return "windswept hills";
+        case windswept_forest: return "windswept forest";
+        case windswept_gravelly_hills: return "windswept gravelly hills";
+        case windswept_savanna: return "windswept savanna";
+        case wooded_badlands: return "wooded badlands";
         }
     }
 
@@ -140,106 +140,106 @@ const char *biome2str(int mc, int id)
     case taiga: return "taiga";
     case swamp: return "swamp";
     case river: return "river";
-    case nether_wastes: return "nether_wastes";
-    case the_end: return "the_end";
+    case nether_wastes: return "nether wastes";
+    case the_end: return "the end";
     // 10
-    case frozen_ocean: return "frozen_ocean";
-    case frozen_river: return "frozen_river";
-    case snowy_tundra: return "snowy_tundra";
-    case snowy_mountains: return "snowy_mountains";
-    case mushroom_fields: return "mushroom_fields";
-    case mushroom_field_shore: return "mushroom_field_shore";
+    case frozen_ocean: return "frozen ocean";
+    case frozen_river: return "frozen river";
+    case snowy_tundra: return "snowy tundra";
+    case snowy_mountains: return "snowy mountains";
+    case mushroom_fields: return "mushroom fields";
+    case mushroom_field_shore: return "mushroom field shore";
     case beach: return "beach";
-    case desert_hills: return "desert_hills";
-    case wooded_hills: return "wooded_hills";
-    case taiga_hills: return "taiga_hills";
+    case desert_hills: return "desert hills";
+    case wooded_hills: return "wooded hills";
+    case taiga_hills: return "taiga hills";
     // 20
-    case mountain_edge: return "mountain_edge";
+    case mountain_edge: return "mountain edge";
     case jungle: return "jungle";
-    case jungle_hills: return "jungle_hills";
-    case jungle_edge: return "jungle_edge";
-    case deep_ocean: return "deep_ocean";
-    case stone_shore: return "stone_shore";
-    case snowy_beach: return "snowy_beach";
-    case birch_forest: return "birch_forest";
-    case birch_forest_hills: return "birch_forest_hills";
-    case dark_forest: return "dark_forest";
+    case jungle_hills: return "jungle hills";
+    case jungle_edge: return "jungle edge";
+    case deep_ocean: return "deep ocean";
+    case stone_shore: return "stone shore";
+    case snowy_beach: return "snowy beach";
+    case birch_forest: return "birch forest";
+    case birch_forest_hills: return "birch forest hills";
+    case dark_forest: return "dark forest";
     // 30
-    case snowy_taiga: return "snowy_taiga";
-    case snowy_taiga_hills: return "snowy_taiga_hills";
-    case giant_tree_taiga: return "giant_tree_taiga";
-    case giant_tree_taiga_hills: return "giant_tree_taiga_hills";
-    case wooded_mountains: return "wooded_mountains";
+    case snowy_taiga: return "snowy taiga";
+    case snowy_taiga_hills: return "snowy taiga hills";
+    case giant_tree_taiga: return "giant tree taiga";
+    case giant_tree_taiga_hills: return "giant tree taiga hills";
+    case wooded_mountains: return "wooded mountains";
     case savanna: return "savanna";
-    case savanna_plateau: return "savanna_plateau";
+    case savanna_plateau: return "savanna plateau";
     case badlands: return "badlands";
-    case wooded_badlands_plateau: return "wooded_badlands_plateau";
-    case badlands_plateau: return "badlands_plateau";
+    case wooded_badlands_plateau: return "wooded badlands plateau";
+    case badlands_plateau: return "badlands plateau";
     // 40  --  1.13
-    case small_end_islands: return "small_end_islands";
-    case end_midlands: return "end_midlands";
-    case end_highlands: return "end_highlands";
-    case end_barrens: return "end_barrens";
-    case warm_ocean: return "warm_ocean";
-    case lukewarm_ocean: return "lukewarm_ocean";
-    case cold_ocean: return "cold_ocean";
-    case deep_warm_ocean: return "deep_warm_ocean";
-    case deep_lukewarm_ocean: return "deep_lukewarm_ocean";
-    case deep_cold_ocean: return "deep_cold_ocean";
+    case small_end_islands: return "small end islands";
+    case end_midlands: return "end midlands";
+    case end_highlands: return "end highlands";
+    case end_barrens: return "end barrens";
+    case warm_ocean: return "warm ocean";
+    case lukewarm_ocean: return "lukewarm ocean";
+    case cold_ocean: return "cold ocean";
+    case deep_warm_ocean: return "deep warm ocean";
+    case deep_lukewarm_ocean: return "deep lukewarm ocean";
+    case deep_cold_ocean: return "deep cold ocean";
     // 50
-    case deep_frozen_ocean: return "deep_frozen_ocean";
+    case deep_frozen_ocean: return "deep frozen ocean";
     // Alpha 1.2 - Beta 1.7
-    case seasonal_forest: return "seasonal_forest";
+    case seasonal_forest: return "seasonal forest";
     case shrubland: return "shrubland";
     case rainforest: return "rainforest";
 
-    case the_void: return "the_void";
+    case the_void: return "the void";
 
     // mutated variants
-    case sunflower_plains: return "sunflower_plains";
-    case desert_lakes: return "desert_lakes";
-    case gravelly_mountains: return "gravelly_mountains";
-    case flower_forest: return "flower_forest";
-    case taiga_mountains: return "taiga_mountains";
-    case swamp_hills: return "swamp_hills";
-    case ice_spikes: return "ice_spikes";
-    case modified_jungle: return "modified_jungle";
-    case modified_jungle_edge: return "modified_jungle_edge";
-    case tall_birch_forest: return "tall_birch_forest";
-    case tall_birch_hills: return "tall_birch_hills";
-    case dark_forest_hills: return "dark_forest_hills";
-    case snowy_taiga_mountains: return "snowy_taiga_mountains";
-    case giant_spruce_taiga: return "giant_spruce_taiga";
-    case giant_spruce_taiga_hills: return "giant_spruce_taiga_hills";
-    case modified_gravelly_mountains: return "modified_gravelly_mountains";
-    case shattered_savanna: return "shattered_savanna";
-    case shattered_savanna_plateau: return "shattered_savanna_plateau";
-    case eroded_badlands: return "eroded_badlands";
-    case modified_wooded_badlands_plateau: return "modified_wooded_badlands_plateau";
-    case modified_badlands_plateau: return "modified_badlands_plateau";
+    case sunflower_plains: return "sunflower plains";
+    case desert_lakes: return "desert lakes";
+    case gravelly_mountains: return "gravelly mountains";
+    case flower_forest: return "flower forest";
+    case taiga_mountains: return "taiga mountains";
+    case swamp_hills: return "swamp hills";
+    case ice_spikes: return "ice spikes";
+    case modified_jungle: return "modified jungle";
+    case modified_jungle_edge: return "modified jungle edge";
+    case tall_birch_forest: return "tall birch forest";
+    case tall_birch_hills: return "tall birch hills";
+    case dark_forest_hills: return "dark forest hills";
+    case snowy_taiga_mountains: return "snowy taiga mountains";
+    case giant_spruce_taiga: return "giant spruce taiga";
+    case giant_spruce_taiga_hills: return "giant spruce taiga hills";
+    case modified_gravelly_mountains: return "modified gravelly mountains";
+    case shattered_savanna: return "shattered savanna";
+    case shattered_savanna_plateau: return "shattered savanna plateau";
+    case eroded_badlands: return "eroded badlands";
+    case modified_wooded_badlands_plateau: return "modified wooded badlands plateau";
+    case modified_badlands_plateau: return "modified badlands plateau";
     // 1.14
-    case bamboo_jungle: return "bamboo_jungle";
-    case bamboo_jungle_hills: return "bamboo_jungle_hills";
+    case bamboo_jungle: return "bamboo jungle";
+    case bamboo_jungle_hills: return "bamboo jungle hills";
     // 1.16
-    case soul_sand_valley: return "soul_sand_valley";
-    case crimson_forest: return "crimson_forest";
-    case warped_forest: return "warped_forest";
-    case basalt_deltas: return "basalt_deltas";
+    case soul_sand_valley: return "soul sand valley";
+    case crimson_forest: return "crimson forest";
+    case warped_forest: return "warped forest";
+    case basalt_deltas: return "basalt deltas";
     // 1.17
-    case dripstone_caves: return "dripstone_caves";
-    case lush_caves: return "lush_caves";
+    case dripstone_caves: return "dripstone caves";
+    case lush_caves: return "lush caves";
     // 1.18
     case meadow: return "meadow";
     case grove: return "grove";
-    case snowy_slopes: return "snowy_slopes";
-    case stony_peaks: return "stony_peaks";
-    case jagged_peaks: return "jagged_peaks";
-    case frozen_peaks: return "frozen_peaks";
+    case snowy_slopes: return "snowy slopes";
+    case stony_peaks: return "stony peaks";
+    case jagged_peaks: return "jagged peaks";
+    case frozen_peaks: return "frozen peaks";
     // 1.19
-    case deep_dark: return "deep_dark";
-    case mangrove_swamp: return "mangrove_swamp";
+    case deep_dark: return "deep dark";
+    case mangrove_swamp: return "mangrove swamp";
     // 1.20
-    case cherry_grove: return "cherry_grove";
+    case cherry_grove: return "cherry grove";
     }
     return NULL;
 }
