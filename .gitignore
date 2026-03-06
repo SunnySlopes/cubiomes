@@ -1,5 +1,6 @@
 find_compactbiomes
 find_quadhuts
+speedrun_seed
 .cproject
 .project
 docs/LayerSummary.aux
@@ -9,4 +10,9 @@ docs/LayerSummary.toc
 *.o
 *.a
 a.out
+server
 
+_codeql_build_dir/
+_codeql_detected_source_root
+tests
+tests_new
